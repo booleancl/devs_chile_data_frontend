@@ -39,6 +39,6 @@ export const getData = async () => {
     
     return getDevProfiles(response.data)
   } catch (error) {
-    console.log(error)
+    console.log(error.message)
   }
 }

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest --ui --coverage"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^2.0.1",
+    "@vitest/coverage-c8": "^0.22.1",
+    "@vitest/ui": "^0.22.1",
     "cypress": "^10.6.0",
     "vite": "^3.0.7",
     "vitest": "^0.22.1"
