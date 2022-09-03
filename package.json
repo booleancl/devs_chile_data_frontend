@@ -21,7 +21,6 @@
     "string-to-color": "^2.2.2"
   },
   "devDependencies": {
-    "@frsource/cypress-plugin-visual-regression-diff": "^1.9.10",
     "@vitejs/plugin-react": "^2.0.1",
     "@vitest/coverage-c8": "^0.22.1",
     "@vitest/ui": "^0.22.1",

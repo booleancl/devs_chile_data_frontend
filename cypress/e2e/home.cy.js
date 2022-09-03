@@ -9,7 +9,7 @@ describe('question 6', () => {
       cy.wait(4000)
       
       cy.get('h1').invoke('text').should('equal', expectedQuestion)
-      cy.get('canvas').matchImage()
+
     })
   
   })
