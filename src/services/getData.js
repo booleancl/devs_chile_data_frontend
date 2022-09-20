@@ -38,8 +38,9 @@ const getDevProfiles = (responses, questionIndex) => {
   const labels = Object.keys(chartData)
   const backgroundColor = Object.values(chartData).map(({ color }) => color)
   const data = Object.values(chartData).map(({ count }) => count)
-  
-  return { label, labels, backgroundColor, data }
+  const questions = responses[0].answers.map((answer) => answer.question)
+
+  return { label, labels, backgroundColor, data, questions }
 }
 
 export const getData = async (questionIndex) => {
