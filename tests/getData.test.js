@@ -15,7 +15,7 @@ describe('getData Service', () => {
       data: require('./fixtures/answers.json')
     })
 
-    const data = await getData()
+    const data = await getData(6)
 
     expect(axios.get).toHaveBeenCalledWith('https://dev-chile-boolean-bff.onrender.com/answers')
     expect(data).toEqual({

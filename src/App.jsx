@@ -24,7 +24,7 @@ function App() {
 
   const getChartData = async () => {
     const questionIndex = 6
-    const { label, labels, data, backgroundColor } = await getData(8)
+    const { label, labels, data, backgroundColor } = await getData(questionIndex)
     // await wait(2000)
     
     setTitle(label)
